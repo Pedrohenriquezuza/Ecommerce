@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Ecommerce Tailwind</title>
   </head>
   <body class="bg-[#EDEDED] w-screen h-screen">
@@ -17,5 +24,21 @@
         />
       </div>
     </nav>
+
+    <main
+      class="grid grid-cols-2 gap-2 p-5 mx-5 mt-5"
+      id="main-products"
+    ></main>
+
+    <nav class="fixed bottom-5 ml-4 p-3 bg-white flex w-[350px] rounded-xl">
+      <div>
+        <img
+          src="https://www.shareicon.net/download/2015/08/31/93774_logo.ico"
+          alt="logo da empresa"
+          class="w-6"
+        />
+      </div>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>
