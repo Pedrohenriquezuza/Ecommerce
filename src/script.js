@@ -39,7 +39,7 @@ async function gerarProdutosDaApi() {
         </div>
 
         <div class="flex gap-9 py-1 text-center items-center">
-          <div class="font-bold">${produto.price}</div>
+          <div class="font-bold">$${produto.price}</div>
 
           <i
             class="fa-solid fa-cart-shopping text-white bg-black p-2 rounded-md"

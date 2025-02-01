@@ -14,6 +14,11 @@
     <title>Ecommerce Tailwind</title>
   </head>
   <body class="bg-[#EDEDED] w-screen h-screen">
+    <div
+      class="cart h-full w-full bg-[#EDEDED] fixed transition-transform transform translate-x-full ease-in-out duration-10000"
+    >
+      CARRINHO
+    </div>
     <nav class="flex items-center justify-center text-left mt-3">
       <div class="flex flex-col items-start gap-1">
         <span class="text-sm text-[#60695C]">Search Item</span>
@@ -30,13 +35,24 @@
       id="main-products"
     ></main>
 
-    <nav class="fixed bottom-5 ml-4 p-3 bg-white flex w-[350px] rounded-xl">
-      <div>
+    <nav
+      class="fixed bottom-5 ml-4 p-3 px-6 bg-white flex w-[350px] rounded-xl justify-between"
+    >
+      <div class="flex gap-9 items-center justify-center">
         <img
           src="https://www.shareicon.net/download/2015/08/31/93774_logo.ico"
           alt="logo da empresa"
           class="w-6"
         />
+        <i class="fa-solid fa-bars text-[20px]"></i>
+        <i
+          class="fa-solid fa-shop text-[20px] bg-black p-2 text-white rounded-md"
+        ></i>
+        <i class="fa-solid fa-bag-shopping text-[27px]"></i>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <i class="fa-solid fa-circle-xmark text-red-600 text-2xl"></i>
       </div>
     </nav>
     <script src="script.js"></script>
