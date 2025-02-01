@@ -695,6 +695,24 @@
       max-width: 96rem !important;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -800,8 +818,32 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-28 {
+    width: calc(var(--spacing) * 28);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-md {
+    width: var(--container-md);
+  }
   .w-screen {
     width: 100vw;
+  }
+  .w-sm {
+    width: var(--container-sm);
+  }
+  .w-xl {
+    width: var(--container-xl);
+  }
+  .w-xs {
+    width: var(--container-xs);
   }
   .max-w-none {
     max-width: none;
@@ -1205,6 +1247,12 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1298,6 +1346,12 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1416,6 +1470,9 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
+  .bg-\[\#EDEDED\] {
+    background-color: #EDEDED;
+  }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
@@ -1433,6 +1490,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1600,6 +1660,33 @@
   .object-top {
     object-position: top;
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-9 {
+    padding-inline: calc(var(--spacing) * 9);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
   .text-center {
     text-align: center;
   }
@@ -1641,6 +1728,10 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .leading-none {
     --tw-leading: 1;
@@ -1718,6 +1809,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-\[\#60695C\] {
+    color: #60695C;
   }
   .capitalize {
     text-transform: capitalize;
